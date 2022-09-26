@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <style>
+            body{
+                background-color: black;
+            }
+            h1, p{
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #links p{
+                margin-top: 35px;
+            }
+            p a{
+                background-color: green;
+                color: white;
+                padding: 14px 50px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 15px;   
+            }
+            a:hover{
+                background-color: rgb(13, 156, 13);
+                transition-duration: 0.5s;
+            }
+        </style>
     </head>
-    <body>
-        <h1>Test</h1>
+    <body style="text-align: center;">
+        <h1>Links:</h1>
+        <div id="links">
+            <p><a href="https://github.com/HelloWorld7894/Plnoc2022" target="_blank">Github Repo</a></p>
+            <p><a href="https://youtube.com/playlist?list=PLLj8KSFpndPIf0g6WFnaAJ1_LwnLGPuYW" target="_blank">Youtube Playlist</a></p>
+        </div>
     </body>
 </html>
