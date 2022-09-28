@@ -1,0 +1,13 @@
+<h1 class="book">Programming Computer Vision with Python</h1>
+<p class="author">Jan Erik Solem</p>
+<p class="text">This book shows the basics of computer Vision
+and some addon algorithms. Only small usage of machine learning algorithms,
+most were unsupervised-type. I recommend for beginners.
+</p>
+
+<h1 class="book">Hands on Machine Learning with Scikit-Learn, Keras & Tensorflow</h1>
+<p class="author">Aurélien Géron</p>
+<p class="text">A really expensive type of literature, which cost me a lot, but it
+was a worthy buy. I definitely recommend, but sometimes it was quite difficult
+reading it, but thats because it contains everything from Machine Learning and Deep Learning.
+</p>

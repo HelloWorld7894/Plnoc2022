@@ -4,6 +4,8 @@
         <style>
             body{
                 background-color: black;
+                margin-left: 50px;
+                margin-right: 50px;
             }
             h1, p{
                 color: white;
@@ -18,19 +20,61 @@
                 padding: 14px 50px;
                 text-align: center;
                 text-decoration: none;
-                border-radius: 15px;   
+                border-radius: 15px;
+                cursor: pointer;
+                user-select: none;
             }
             a:hover{
                 background-color: rgb(13, 156, 13);
                 transition-duration: 0.5s;
             }
+
+            #literature{
+                background-color: rgb(32, 32, 32);
+                margin-top: 25px;
+                padding: 8px;
+            }
+
+            .book{
+                font-size: 20px;
+            }
+            .author{
+                font-style: italic;
+                font-weight: bold;
+            }
         </style>
+        <script>
+            var Switch = false
+
+            function ShowLiterature(){
+                if (!Switch){
+                    var lit = document.createElement("div")
+                    lit.id = "literature"
+                    document.body.appendChild(lit)
+
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            lit.innerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open("GET", "./content/literature.txt", true);
+                    xhttp.send();
+                    Switch = true
+                }
+                else{
+                    document.getElementById("literature").remove()
+                    Switch = false
+                }
+            }
+        </script>
     </head>
-    <body style="text-align: center;">
-        <h1>Links:</h1>
-        <div id="links">
+    <body>
+        <h1 style="text-align: center;">Links:</h1>
+        <div id="links"  style="text-align: center;">
             <p><a href="https://github.com/HelloWorld7894/Plnoc2022" target="_blank">Github Repo</a></p>
             <p><a href="https://youtube.com/playlist?list=PLLj8KSFpndPIf0g6WFnaAJ1_LwnLGPuYW" target="_blank">Youtube Playlist</a></p>
+            <p onclick="ShowLiterature()"><a>Literature</a></p>
         </div>
     </body>
 </html>
