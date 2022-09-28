@@ -20,16 +20,16 @@ face_detection = mp_face_detection.FaceDetection(model_selection=0, min_detectio
 
 for frame in Cam.capture_continuous(RawCapture, format="bgr", use_video_port = True):
 
-    Img = frame.array
-    RawCapture.truncate(0)
+  Img = frame.array
+  RawCapture.truncate(0)
 
-    image = cv2.cvtColor(Img, cv2.COLOR_BGR2RGB)
-    results = face_detection.process(image)
+  image = cv2.cvtColor(Img, cv2.COLOR_BGR2RGB)
+  results = face_detection.process(image)
 
-    image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-    if results.detections:
-      for detection in results.detections:
-        mp_drawing.draw_detection(image, detection)
-    cv2.imshow('MediaPipe Face Detection', image)
-    if cv2.waitKey(5) & 0xFF == 27:
-      break
+  image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+  if results.detections:
+    for detection in results.detections:
+      mp_drawing.draw_detection(image, detection)
+  cv2.imshow('MediaPipe Face Detection', image)
+  if cv2.waitKey(1) & 0xFF == ord('q'):
+    break
