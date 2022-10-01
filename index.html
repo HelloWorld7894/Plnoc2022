@@ -29,7 +29,7 @@
                 transition-duration: 0.5s;
             }
 
-            #literature{
+            #literature, #web_sources{
                 background-color: rgb(32, 32, 32);
                 margin-top: 25px;
                 padding: 8px;
@@ -44,12 +44,23 @@
             }
         </style>
         <script>
-            var Switch = false
+            var Switch = [false, false]
 
-            function ShowLiterature(){
-                if (!Switch){
+            function Show(Dest_index){
+                var Dest;
+                switch (Dest_index) {
+                    case 0:
+                        Dest = "literature"
+
+                        break;
+                    case 1:
+                        Dest = "web_sources"
+
+                        break;
+                }
+                if (!Switch[Dest_index]){
                     var lit = document.createElement("div")
-                    lit.id = "literature"
+                    lit.id = Dest
                     document.body.appendChild(lit)
 
                     var xhttp = new XMLHttpRequest();
@@ -58,13 +69,13 @@
                             lit.innerHTML = this.responseText;
                         }
                     };
-                    xhttp.open("GET", "./content/literature.txt", true);
+                    xhttp.open("GET", "./content/" + Dest + ".txt", true);
                     xhttp.send();
-                    Switch = true
+                    Switch[Dest_index] = true
                 }
                 else{
-                    document.getElementById("literature").remove()
-                    Switch = false
+                    document.getElementById(Dest).remove()
+                    Switch[Dest_index] = false
                 }
             }
         </script>
@@ -74,7 +85,8 @@
         <div id="links"  style="text-align: center;">
             <p><a href="https://github.com/HelloWorld7894/Plnoc2022" target="_blank">Github Repo</a></p>
             <p><a href="https://youtube.com/playlist?list=PLLj8KSFpndPIf0g6WFnaAJ1_LwnLGPuYW" target="_blank">Youtube Playlist</a></p>
-            <p onclick="ShowLiterature()"><a>Literature</a></p>
+            <p onclick='Show(0)'><a>Literature</a></p>
+            <p onclick='Show(1)'><a>Web Articles</a></p>
         </div>
     </body>
 </html>
