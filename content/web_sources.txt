@@ -1,8 +1,8 @@
 <p class="text">
-<b>https://www.surendranath.org/GPA/General/ColorAS/ColorAS.html</b> &larr Some brief explanation about substraction and addition of colors
+<b>https://www.surendranath.org/GPA/General/ColorAS/ColorAS.html</b> <- Some brief explanation about substraction and addition of colors
 </p>
 <p class="text">
-<b>https://www.w3schools.com/colors/colors_rgb.asp</b> &larr Color mixing simulated in web enviroment
+<b>https://www.w3schools.com/colors/colors_rgb.asp</b> <- Color mixing simulated in web enviroment
 </p>
 <p class="text">
 <b>https://medium.com</b>
@@ -14,8 +14,11 @@
 <b>https://analyticsvidhya.com</b>
 </p>
 <p class="text">
-<b>https://pyimageresearch.com</b> &larr explaining most of computer vision methods briefly in OpenCV package for Python
+<b>https://pyimageresearch.com</b> <- explaining most of computer vision methods briefly in OpenCV package for Python
 </p>
 <p class="text">
-<b>https://www.mygreatlearning.com/blog/types-of-neural-networks/</b> &larr explaining types of neural network architectures
+<b>https://www.mygreatlearning.com/blog/types-of-neural-networks/</b> <- explaining types of neural network architectures
+</p>
+<p class="text>
+<b>https://www.elementsofai.cz/</b> <- this was probably the most simple and intuitive explanation of Neural networks I found on internet
 </p>
