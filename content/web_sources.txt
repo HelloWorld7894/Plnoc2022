@@ -13,3 +13,9 @@
 <p class="text">
 <b>https://analyticsvidhya.com</b>
 </p>
+<p class="text">
+<b>https://pyimageresearch.com</b> &larr explaining most of computer vision methods briefly in OpenCV package for Python
+</p>
+<p class="text">
+<b>https://www.mygreatlearning.com/blog/types-of-neural-networks/</b> &larr explaining types of neural network architectures
+</p>
