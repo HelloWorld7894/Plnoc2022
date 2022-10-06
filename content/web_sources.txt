@@ -22,3 +22,15 @@
 <p class="text>
 <b>https://www.elementsofai.cz/</b> <- this was probably the most simple and intuitive explanation of Neural networks I found on internet
 </p>
+<p class="text">
+<b>https://viso.ai/deep-learning/pose-estimation-ultimate-overview/</b> <- explains pose estimation
+</p>
+<p class="text">
+<b>https://towardsdatascience.com/real-time-3d-face-tracking-with-deep-learning-963b91bb5ad4</b> <- realtime face tracking
+</p>
+<p class="text">
+<b>https://towardsdatascience.com/yolo-v3-explained-ff5b850390f</b> <- YOLOv3 algorithm explained
+</p>
+<p class="text">
+<b>https://towardsdatascience.com/object-detection-with-convolutional-neural-networks-c9d729eedc18</b> <- R-CNN explained
+</p>
