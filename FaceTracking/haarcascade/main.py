@@ -17,7 +17,6 @@ video = cv2.VideoCapture(0)
 while True:
 
     ret, Img = video.read()
-    Img = cv2.flip(Img, 0)
 
     gray = cv2.cvtColor(Img, cv2.COLOR_BGR2GRAY)
     haar = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
